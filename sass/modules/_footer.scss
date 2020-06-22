@@ -1,0 +1,42 @@
+@mixin module-footer {
+	/* Footer */
+	footer {
+		background: url(../img/footer.jpg) no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		position: relative;
+		.nav-link {
+			&:hover {
+				&:before {
+					background: none;
+				}
+			}
+			&::after {
+				display: none !important;
+			}
+		}
+		&:before {
+			content: '';
+			background: rgba($black, 0.5);
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+		}
+	}
+	.footer__title {
+		position: relative;
+		font-family: $heading-second;
+		font-size: rem(32);
+		line-height: rem(40);
+		margin-bottom: 40px;
+		@include breakpoint(small) {
+			font-size: rem(44);
+			line-height: rem(52);
+		}
+	}
+	.copyright {
+		padding-right: 20px;
+	}
+}

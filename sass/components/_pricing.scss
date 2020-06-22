@@ -1,0 +1,57 @@
+/*
+---
+name: Pricing
+category:
+  - components
+  - components/pricing
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Pricing vertical columns
+!![](./components/pricing/price-1.html)
+
+#### Pricing horizontal columns
+!![](./components/pricing/price-2.html)
+
+#### Pricing with background color
+!![](./components/pricing/price-3.html)
+
+*/
+
+$price-size: rem(30);
+$title-size: rem(30);
+
+@mixin component-pricing {
+	// .c-price__item {
+	// 	border: 1px solid $lighter;
+	// 	border-radius: rem(8);
+	// 	padding: rem(30);
+	// 	background-color: $white;
+	// }
+	// .c-price__item--active {
+	// 	transform: scale(1.075);
+	// }
+	// .c-price__item-title {
+	// 	font-size: $title-size;
+	// 	margin-bottom: rem(10);
+	// }
+	// .c-price__item-price {
+	// 	font-size: $price-size;
+	// 	font-weight: 700;
+	// 	margin-bottom: rem(15);
+	// }
+	// .c-price__item-list {
+	// 	margin-bottom: rem(30);
+	// }
+
+	// .c-price--bg {
+	// 	.c-price__item {
+	// 		background-color: $price-item-bg;
+	// 		color: $price-item-color;
+	// 	}
+	// }
+}

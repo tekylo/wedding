@@ -1,0 +1,40 @@
+@mixin base-common {
+	/* Common */
+	img {
+		max-width: 100%;
+		height: auto;
+		-ms-interpolation-mode: bicubic;
+		display: inline-block;
+		vertical-align: middle
+	}
+	.img--rounded {
+		border-radius: 20px;
+	}
+	.img--circle {
+		border-radius: 50%;
+	}
+	.parallax {
+		z-index: 99;
+	}
+	.img--cover {
+		&:before {
+			content: '';
+			background: rgba(0, 0, 0, 0.5);
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+		}
+	}
+	.mw-64 {
+		max-width: 64px;
+	}
+	a {
+		color: inherit;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}

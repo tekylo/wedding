@@ -1,0 +1,37 @@
+/*!
+Title: Main CSS File
+Theme Name: 
+Author Name: FairyTheme
+Author URI: http://themeforest.net/user/fairytheme
+
+Table of Contents:
+------------------
+1. Base
+2. Components
+3. Modules
+----------------------------------*/
+
+//Bootstrap
+@import "vendor/bootstrap/_functions.scss";
+@import "vendor/bootstrap/variables";
+//Utilities
+@import "utilities/utilities";
+//Base
+@import "base/base";
+//Modules
+@import "modules/modules";
+// Components
+@import "components/components";
+
+/*!
+1. Base
+================*/
+@include base;
+/*!
+2. Components
+================*/
+@include components;
+/*!
+3. Modules
+================*/
+@include modules;

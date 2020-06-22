@@ -1,0 +1,29 @@
+/*
+---
+name: Button
+category:
+  - components
+  - components/button
+tag:
+  - base
+compile: true
+---
+
+#### Button tags
+
+A basic button can be created with minimal markup. Because buttons can be used for many purposes, it's important to use the right tag.
+
+* Use the `<a>` tag if the button is a link to another page, or a link to an anchor within a page. Generally anchors don't require JavaScript to work.
+* Use the `<button>` tag if the button performs an action that changes something on the current page. (Require JavaScript to work).
+
+!![](./components/button/button.html)
+
+#### Button sizes
+
+Add `.btn-lg` or `.btn-sm` for additional sizes.
+!![](./components/button/button-size.html)
+
+*/
+
+@mixin component-buttons {
+}

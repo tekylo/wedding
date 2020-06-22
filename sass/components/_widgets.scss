@@ -1,0 +1,73 @@
+@mixin component-widgets {
+    .widget {
+        li {
+            font-family: $heading-second;
+            font-size: 16px;
+            padding-bottom: 10px;
+            color: $secondary;
+        }
+        span:not(.comment-author-link) {
+            float: right;
+        }
+        #searchform {
+            width: 100%;
+            max-width: 320px;
+            position: relative;
+        }
+    }
+    .widget-author__image {
+        margin-bottom: 25px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .widget-author__name {
+        font-family: $heading-second;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .widget-author__desc {
+        font-size: 18px;
+    }
+    .widget_recent_entries {
+        li {
+            padding-bottom: 18px;
+        }
+    }
+    .widget-rp__img {
+        margin-right: 20px;
+    }
+    .widget-rp__content {
+        a {
+            font-family: sans-serif;
+        }
+        .post-date {
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+    .widget_calendar {
+        table {
+            width: 100%;
+            a {
+                color: $primary;
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    .widget_tag_cloud {
+        .tag-cloud-link {
+            font-size: 14px !important;
+            font-style: italic;
+            margin-right: 7px;
+            text-transform: uppercase;
+        }
+    }
+    .widget_recent_comments {
+        a {
+            text-decoration: underline;
+        }
+    }
+}

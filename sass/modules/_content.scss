@@ -1,0 +1,353 @@
+@mixin module-content {
+	.section {
+		padding: rem(100 0);
+	}
+	.section--blue {
+		background: rgba($blue-brand, 0.2);
+	}
+	// Main Section
+	.main-hero {
+		height: 100%;
+		overflow: hidden;
+		@include breakpoint(medium-down) {
+			height: 90%;
+		}
+	}
+	.breadcrumbs .fa {
+		font-size: 4px;
+		padding: 0 5px;
+		vertical-align: middle;
+	}
+	// Love story
+	.love-story {
+		@include breakpoint(small) {
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 143px;
+				height: 186px;
+				background: url(../img/ls-flower.png) no-repeat;
+			}
+			p {
+				width: 70%;
+			}
+		}
+		@include breakpoint(medium) {
+			p {
+				width: 50%;
+			}
+		}
+	}
+	.love-story__flower-parallax {
+		left: 20px;
+		top: 150px;
+
+		@include breakpoint(small) {
+			left: 100px;
+		}
+	}
+	.love-story__flowers {
+		max-width: 300px;
+		padding-bottom: 30px;
+	}
+	// Date
+	.date-section__block {
+		position: relative;
+		@include breakpoint(small) {
+			&:before, &:after {
+				@include content;
+				position: absolute;
+				width: 239px;
+				height: 231px;
+				top: -12px;
+				background-size: 150px;
+				width: 150px;
+				background-repeat: no-repeat;
+			}
+			&:after {
+				background-image: url(../img/leaves-right.png);
+				right: 0;
+			}
+			&:before {
+				background-image: url(../img/leaves-left.png);
+			}
+		}
+		@include breakpoint(medium) {
+			max-width: 720px;
+			margin: 0 auto;
+		}
+		.title--special {
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 30px;
+		}
+	}
+	.date-section__flowers {
+		max-width: 300px;
+		padding-bottom: 30px;
+	}
+	.date-section__place {
+		font-family: $heading-second;
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+	.timer-item {
+		padding: 0 10px;
+		@include breakpoint(small) {
+			padding: 0 30px;
+		}
+	}
+	.timer__digit {
+		font-size: 40px;
+		@include breakpoint(small) {
+			font-size: 50px;
+			line-height: 80px;
+			font-weight: 400;
+		}
+	}
+	.timer__text {
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+	// Events
+	.event__info-header {
+		border-top: 1px solid $gray-brand;
+		text-transform: uppercase;
+		padding-top: 30px;
+	}
+	// Gallery
+	.gallery {
+		position: relative;
+		background: url(../img/gallery.png);
+		background-size: cover;
+		background-position: center;
+		&:before {
+			content: '';
+			background: rgba($pink-brand, 0.5);
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0
+		}
+	}
+	.gallery__slider {
+		position: relative;
+		margin-top: 80px;
+
+		@include breakpoint(medium) {
+			margin-bottom: 100px;
+		}
+
+		.slick-list {
+			margin-bottom: 30px;
+		}
+	}
+	.gallery__slider-num {
+		position: absolute;
+		bottom: -79px;
+		display: flex;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 30px;
+		font-family: georgia;
+	}
+	.gallery__flower-prlx-l {
+		top: -150px;
+	}
+	.gallery__flower-prlx-r {
+		bottom: -75px;
+		right: 0;
+	}
+	// Wishes
+	.wishes__slider {
+		margin-top: 80px;
+	}
+	.wishes__person {
+		margin-bottom: 20px;
+	}
+	.wishes__title {
+		font-family: $heading-second;
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 40px;
+	}
+	.wishes__slider {
+		.slick-list {
+			margin-bottom: 30px;
+		}
+
+		p {
+			@include breakpoint(small) {
+				width: 75%;
+			}
+			@include breakpoint(medium) {
+				width: 50%;
+			}
+		}
+	}
+	// RSVP
+	.rsvp {
+		position: relative;
+		&:after {
+			@include content;
+			background: url(../img/rsvp-flowers-r.png) no-repeat;
+			background-size: contain;
+			background-position: 0 100%;
+			max-width: 500px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+		@include breakpoint(small) {
+			&:before {
+				@include content;
+				background: url(../img/rsvp-flowers-l.png) no-repeat;
+				background-size: contain;
+				background-position: left;
+				max-width: 400px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				z-index: -1;
+			}
+		}
+		.title {
+			font-family: $heading-second;
+			display: block;
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+	}
+	.loader {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: #f5f5f5;
+	}
+	#my-svg {
+		position: relative;
+		height: 50%;
+	}
+	.loader-img {
+		height: 50%;
+		img {
+			max-height: 100%;
+		}
+	}
+	svg {
+		height: 100%;
+		path, text {
+			fill-opacity: 0;
+			stroke: #000;
+			stroke-width: 1;
+			fill: #000;
+			transition: fill-opacity 0.2s ease-in 0s;
+		}
+	}
+	svg.finish path {
+		fill-opacity: 1;
+	}
+	// Gallery
+	.grid-item,
+	.grid-sizer {
+		width: 25%;
+	}
+	.grid-item--width2 {
+		width: 50%;
+	}
+	.grid-item {
+		padding: 0;
+		border: 2px solid rgba(#fff, 0.1);
+	}
+	// Blog
+	.aside {
+		.widget {
+			margin-bottom: 48px;
+		}
+		h3,
+		.widget-title {
+			font-family: $heading-second;
+			font-size: 20px;
+			border: 1px solid $black;
+			padding: 10px;
+			text-align: center;
+			margin-bottom: 30px;
+			color: $black;
+		}
+	}
+	.post-article {
+		background: $white;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+	.single-post_banner {
+		margin: -20px -20px 40px -20px;
+	}
+	.single-post_title {
+		font-family: $heading-second;
+		font-size: 40px;
+		text-align: center;
+	}
+	.blog-item_meta {
+		font-family: $heading-second;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 7px;
+		font-style: italic;
+		span {
+			padding-right: 5px;
+			i {
+				padding-right: 3px;
+			}
+		}
+	}
+	.post-tags {
+		margin-bottom: 16px;
+	}
+	.post-author__img {
+		margin-right: 20px;
+	}
+	.post-author__meta {
+		padding: 25px 0;
+	}
+	.post-author__name {
+		font-family: $heading-second;
+		font-size: 22px;
+	}
+	.post-author__desc {
+		width: 80%;
+	}
+	.post-content blockquote {
+		text-align: center;
+		border: none;
+		font-style: italic;
+		font-weight: 600;
+	}
+	.post-tags {
+		@include breakpoint(small-down) {
+			margin-bottom: 16px;
+		}
+	}
+	.latest-posts {
+		.media {
+			font-family: $heading-second;
+		}
+		.text-truncate {
+			font-size: 16px;
+		}
+		small {
+			font-style: italic;
+		}
+	}
+	.blog-tags__item {
+		font-family: $heading-second;
+		font-style: italic;
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,100 @@
+@mixin component-hero-banner {
+	.c-hero-banner {
+		position: relative;
+		.couple {
+			font-family: 'noelan';
+			font-size: rem(30);
+			@include breakpoint(small) {
+				font-size: rem(75);
+			}
+		}
+		.jumbotron {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+			max-width: 100%;
+			text-align: center;
+			text-decoration: none;
+			margin-bottom: 0;
+			background: none;
+		}
+		.jumbotron--bottom {
+			bottom: 20%;
+			top: initial;
+			transform: translateX(-50%)
+		}
+		.mask {
+			position: absolute;
+			bottom: -5px;
+		}
+		.cover-img {
+			position: absolute;
+			bottom: 0;
+			max-width: 250px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.c-hero-banner__image {
+		height: 100%;
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.c-hero-banner--small {
+		max-height: 50vh;
+		overflow: hidden;
+	}
+	.c-hero-banner--md {
+		max-height: 60vh;
+		overflow: hidden;
+	}
+	.c-hero-banner__text-section {
+		@include absolute-center;
+		max-width: 40%;
+		text-align: center;
+		text-decoration: none;
+		.c-hero-banner--text-left & {
+			left: 20%;
+			text-align: left;
+			transform: translateY(-50%);
+		}
+		.c-hero-banner--text-right & {
+			left: inherit;
+			right: 20%;
+			text-align: right;
+			transform: translateY(-50%);
+		}
+		.c-hero-banner--bg & {
+			top: inherit;
+			transform: translateX(-50%);
+			position: relative;
+		}
+	}
+
+	.c-hero-banner--bg {
+		padding: rem(75 0);
+	}
+
+	.c-hero-banner--main {
+		height: 100%;
+	}
+
+	.c-hero-banner__mask {
+		position: absolute;
+		bottom: -5px;
+	}
+
+	@include breakpoint(small-down) {
+		.-ios-fix {
+			.main-hero,
+			.c-hero-banner__image img {
+				height: 500px;
+			}
+		}
+	}
+}

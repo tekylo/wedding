@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Flower - Wedding Template</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/lightbox.min.css">
+		<!-- Main style -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display%7COpen+Sans:300,400,600,700%7CSource+Serif+Pro%7CDosis" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5shiv.min.js"></script>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<body>
+	<!-- Navigation -->
+	<nav id="navbar" class="navbar navbar-expand-lg fixed-top p-0 text-white">
+		<div class="d-lg-flex w-100 align-items-start">
+			<a class="navbar-brand text-primary" href="#">
+				<img class="d-none d-lg-block navbar-brand__img" src="img/logo.png" alt="logo">
+				<img class="d-lg-none navbar-brand__img" src="img/logo-small.png" alt="logo">
+			</a>
+			<button type="button" class="d-lg-none navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar top-bar"></span>
+				<span class="icon-bar middle-bar"></span>
+				<span class="icon-bar bottom-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="rsvp.html">RSVP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="blog-single.html">Single Post</a>
+					</li>
+					<li class="nav-item d-flex ml-lg-4">
+						<a class="nav-link nav-link_social" href="#">
+							<i class="fa fa-2x fa-facebook-square"></i>
+						</a>
+						<a class="nav-link nav-link_social" href="#">
+							<i class="fa fa-2x fa-twitter-square"></i>
+						</a>
+						<a class="nav-link nav-link_social" href="#">
+							<i class="fa fa-2x fa-google-plus-square"></i>
+						</a>
+					</li>
+					<li class="nav-item ml-lg-4 d-lg-none">
+						<span class="nav-link">&copy; Joseph and Sophia 2018.</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="loader" class="loader">
+		<div id="my-svg"></div>
+		<div class="loader-img text-center">
+			<img src="img/story-flowers.png" alt="flowers">
+		</div>
+	</div>
+	<section class="page-hero">
+		<div class="c-hero-banner c-hero-banner--md">
+			<div class="c-hero-banner__section c-hero-banner__image img--cover">
+				<img class="lazyload" src="img/banner-page.jpg" alt="image" />
+			</div>
+			<div class="jumbotron jumbotron--bottom text-light p-0">
+				<h1 class="text-light title--special">RSVP</h1>
+				<p class="lead d-none d-md-block">We are waiting for you on our wedding.</p>
+			</div>
+		</div>
+	</section>
+    <section id="rsvp" class="rsvp section">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-sm-block col-sm-12 col-md-4">
+                        <img src="img/rsvp-flower.png" class="parallax" alt="flower">
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <h2 class="title mb-2">RSVP</h2>
+                        <h6 class="text-uppercase font-weight-bold mb-0">Will you attend?</h6>
+                        <form id="rsvp-form" action="form.php" method="post">
+                            <div class="row">
+                                <div class="col-md-8 mb-3 m-md-0">
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputName">Your name</label>
+                                        <input type="text" class="form-control" id="inputName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputFriendName">Who is comming with you</label>
+                                        <input type="text" class="form-control" id="inputFriendName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="inputNumber">Contact number</label>
+                                        <input type="tel" class="form-control" id="inputNumber" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 align-self-end">
+                                    <button type="submit" class="btn btn-outline-dark rounded-0 px-3 py-1 font-weight-bold">Send</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="success-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	<!-- Footer -->
+	<footer class="section">
+		<div class="container text-white position-relative">
+			<div class="footer__title">
+				<div class="text-center">Save the date</div>
+				<div class="text-center">Joseph and Sophia</div>
+			</div>
+			<div class="row pb-4">
+				<div class="col-md-6 text-justify">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-6 text-justify">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="row pb-4">
+				<div class="col-md-12 border p-1 mx-1">
+					<ul class="d-sm-flex justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link page-scroll" href="#">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link page-scroll" href="#cases">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link page-scroll" href="#donations">Testimanials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link page-scroll" href="#news">Contacts</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 border border-bottom-0 border-top-0 mx-1">
+					<div class="row">
+						<div class="col-md-4 text-center border-right border-bottom px-0">
+							<div class="pt-1 pb-1">
+								<i class="fa fa-phone fa-3x"></i>
+							</div>
+							<div class="pb-1">+38090-111-2233</div>
+						</div>
+						<div class="col-md-4 text-center border-right border-bottom px-0">
+							<div class="pt-1 pb-1">
+								<i class="fa fa-map-marker fa-3x"></i>
+							</div>
+							<div class="pb-1">New York, USA</div>
+						</div>
+						<div class="col-md-4 text-center border-bottom px-0">
+							<div class="pt-1 pb-1">
+								<i class="fa fa-envelope-o fa-3x"></i>
+							</div>
+							<div class="pb-1">email@contact.com</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">&copy; Copyright 2019. All right Reserved.</div>
+		</div>
+	</footer>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
+	<script src="js/vendor/vivus.min.js"></script>
+	<script src="js/vendor/circletype.min.js"></script>
+	<script src="js/vendor/masonry.pkgd.min.js"></script>
+	<script src="js/vendor/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

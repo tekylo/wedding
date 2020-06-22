@@ -1,0 +1,8 @@
+@mixin component-jumbotron {
+    .jumbotron {
+        h1 {
+            font-family: $heading-second;
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import "_content";
+@import "_footer";
+
+@mixin modules {
+	@include module-content;
+	@include module-footer;
+}

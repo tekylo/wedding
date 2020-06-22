@@ -1,0 +1,19 @@
+$base-font-size: 14px;
+
+@mixin base-body {
+	/* Body */
+	html, body {
+		height: 100%;
+	}
+	body {
+		font-family: $font-primary;
+		font-size: $base-font-size;
+		font-weight: 300;
+		line-height: 1.7;
+		color: $body-color;
+		overflow-x: hidden;
+		&.offcanvas {
+			overflow: hidden;
+		}
+	}
+}

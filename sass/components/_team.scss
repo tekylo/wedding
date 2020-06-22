@@ -1,0 +1,44 @@
+/*
+---
+name: Team
+category:
+  - components
+  - components/team
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Team 1
+!![](./components/team/team-1.html)
+
+#### Team 2
+!![](./components/team/team-2.html)
+
+#### Team 3
+!![](./components/team/team-3.html)
+#### Team 4
+!![](./components/team/team-4.html)
+#### Team 5
+!![](./components/team/team-5.html)
+*/
+
+@mixin component-team {
+	.c-team__img {
+		margin-bottom: 20px;
+	}
+	.c-team__name {
+		margin-bottom: 10px;
+	}
+	.c-team__body {
+		margin-bottom: 15px;
+	}
+	.c-team--hashover {
+		.c-team__item {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
+}

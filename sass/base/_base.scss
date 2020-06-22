@@ -1,0 +1,14 @@
+@import "_custom-variables.scss";
+@import "_fonts";
+@import "_typography";
+@import "_body";
+@import "_lists";
+@import "_common";
+
+@mixin base {
+	@include base-fonts;
+	@include base-typography;
+	@include base-body;
+	@include base-lists;
+	@include base-common;
+}

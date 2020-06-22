@@ -1,0 +1,20 @@
+$list-icon-fs: rem(25);
+
+@mixin component-list {
+	.c-list--bullets {
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+	.c-list--horizontal {
+		.c-list__item {
+			display: inline-block;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.fa {
+			font-size: $list-icon-fs;
+		}
+	}
+}

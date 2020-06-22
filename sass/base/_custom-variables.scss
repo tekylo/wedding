@@ -1,0 +1,32 @@
+$blue-brand: #6d948e;
+$gray-brand: #adadad;
+$pink-brand: #f5e2e4;
+
+$primary: #eab96a;
+
+$theme-colors: (
+	'blue-brand': $blue-brand
+);
+
+$navbar-light-active-color: #000;
+$navbar-dark-active-color: #fff;
+
+$input-border-radius: 0;
+$input-bg: inherit;
+$input-border-color: #000;
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer,
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5)
+);
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.75;
+$h3-font-size: $font-size-base * 1.875;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;

@@ -1,0 +1,74 @@
+@mixin component-card {
+	.card {
+		border-width: 0px;
+		margin-bottom: 50px;
+	}
+	.card-body {
+		padding: 0;
+		a {
+			color: inherit;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	.card-image {
+		max-height: rem(490);
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
+	.card-title {
+		font-family: $heading-second;
+		margin-bottom: 20px;
+		text-align: center;
+		@include breakpoint(small-down) {
+			font-size: 40px;
+		}
+	}
+
+	.card-tags {
+		text-align: center;
+		margin-bottom: 20px;
+		width: 100%;
+
+		span {
+			padding: 0 3px;
+			&:first-child {
+				&:before {
+					content: '-';
+					padding-right: 3px;
+				}
+			}
+
+			&:last-child {
+				a {
+					margin: 0;
+				}
+				&:after {
+					content: '-';
+					padding-left: 3px;
+				}
+			}
+		}
+	}
+
+	.card-text {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.card-category,
+	.post-tags a {
+		font-family: $heading-second;
+		font-style: italic;
+		margin-right: 5px;
+	}
+
+	.card-bottom {
+		font-family: $heading-second;
+		font-style: italic;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		//= parts/header.html
+	</head>
+<body>
+	<!-- Navigation -->
+	//= parts/nav-page.html
+	<div id="loader" class="loader">
+		<div id="my-svg"></div>
+		<div class="loader-img text-center">
+			<img src="img/story-flowers.png" alt="flowers">
+		</div>
+	</div>
+	<section class="page-hero">
+		<div class="c-hero-banner c-hero-banner--md">
+			<div class="c-hero-banner__section c-hero-banner__image img--cover">
+				<img class="lazyload" src="img/banner-blog.jpg" alt="image" />
+			</div>
+			<div class="jumbotron jumbotron--bottom text-light p-0">
+				<h1 class="text-light title--special">Our blog</h1>
+				<p class="lead d-none d-md-block">Find our best stories in these articles. Enjoy the reading and our love</p>
+			</div>
+			<div class="c-hero-banner__mask">
+				<img src="http://pavlyukpetr.com/projects/wp/queenflowers/wp-content/themes/queenflowers/assets/img/mask.png" alt="mask_image">
+			</div>
+		</div>
+	</section>
+	<section id="news" class="py-3 py-sm-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					//= parts/main-card.html
+					<nav aria-label="...">
+						<ul class="pagination mb-4 mb-md-0">
+							<li class="page-item disabled">
+								<span class="page-link rounded-0">Previous</span>
+							</li>
+							<li class="page-item active">
+								<span class="page-link">
+									1
+									<span class="sr-only">(current)</span>
+								</span>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item">
+								<a class="page-link rounded-0" href="#">Next</a>
+							</li>
+						</ul>
+					</nav>
+				</div> <!-- col-md-8 -->
+				<div class="col-md-4">
+					<div class="widget-area aside p-1">
+						//= parts/aside/search.html
+						//= parts/aside/author.html
+						//= parts/aside/latest-posts.html
+						//= parts/aside/categories.html
+						//= parts/aside/tags.html
+						<p class="text-secondary font-italic mt-3">
+							Duis pharetra codeply varius quam sit amet vulputate. Quisque Sed and Codeply editor ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+							accumsan. Aliquam in felis sit amet augue.
+						</p>
+					</div>
+				</div> <!-- col-md-4 -->
+			</div><!-- row -->
+		</div>
+	</section>
+
+	<!-- Footer -->
+	//= parts/footer.html
+</body>
+</html>

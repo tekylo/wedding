@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'laug';
+	src: url('../fonts/laug/laug.eot');
+	src: url('../fonts/laug/laug.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/laug/laug.woff2') format('woff2'),
+		 url('../fonts/laug/laug.woff') format('woff'),
+		 url('../fonts/laug/laug.ttf') format('truetype'),
+		 url('../fonts/laug/laug.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$p-lineheight: 1.6 !default;
+$p-margin-bottom: 1rem !default;
+$p-text-rendering: optimizeLegibility !default;
+
+$title-font: 'laug';
+$title-font-size: 44px;
+
+@mixin base-typography {
+	.title {
+		font-family: $title-font;
+		font-size: 36px;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 40px;
+		@include breakpoint(small) {
+			font-size: $title-font-size;
+		}
+	}
+	.title--white {
+		color: $white;
+		&:before {
+			background: url(../img/title-l-w.png) no-repeat;
+		}
+		&:after {
+			background: url(../img/title-r-w.png) no-repeat;
+		}
+	}
+	.title--special {
+		font-family: $title-font;
+		line-height: 1.2;
+		margin-bottom: 50px;
+		@include breakpoint(small-down) {
+			font-size: 46px;
+			.c-hero-banner & {
+				font-size: 36px;
+			}
+		}
+	}
+	.subtitle {
+		margin-bottom: 30px;
+		@include breakpoint(medium) {
+			width: 50%;
+		}
+	}
+	.lead {
+		@include breakpoint(medium) {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+	.aside h3 {
+		font-family: $heading-second;
+	}
+	/* Typography */
+	h1, h2, h3, h4, h5, h6, figure {
+		font-weight: 400;
+		margin: 0 0 20px 0;
+	}
+	a {
+		@include transition(.5s);
+		&:hover, &:active, &:focus {
+			color: $primary;
+			outline: none;
+			text-decoration: none;
+		}
+	}
+	p {
+		font-size: inherit;
+		line-height: $p-lineheight;
+		margin-bottom: $p-margin-bottom;
+		text-rendering: $p-text-rendering;
+	}
+}

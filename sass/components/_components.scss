@@ -1,0 +1,23 @@
+@import "_accordion";
+@import "_card";
+@import "comments";
+@import "_forms";
+@import "_hero-banner.scss";
+@import "_hero-slider.scss";
+@import "_nav.scss";
+@import "_list.scss";
+@import "jumbotron";
+@import "widgets";
+
+@mixin components {
+	@include component-accordion;
+	@include component-comments;
+	@include component-card;
+	@include component-forms;
+	@include component-hero-banner;
+	@include component-hero-slider;
+	@include component-nav;
+	@include component-list;
+	@include component-jumbotron;
+	@include component-widgets;
+}

@@ -1,0 +1,32 @@
+// responsive breakpoints
+$break-xsmall: 640px;
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+@mixin breakpoint($media) {
+	@if $media == xsmall { // phones > 640
+		@media only screen and (min-width: $break-xsmall) { @content; }
+	}
+	@if $media == small { // > 768
+		@media only screen and (min-width: $break-small) { @content; }
+	}
+	@if $media == medium { // > 992
+		@media only screen and (min-width: $break-medium) { @content; }
+	}
+	@if $media == large { // > 1200
+		@media only screen and (min-width: $break-large) { @content; }
+	}
+	@if $media == small-only { // > 768 & < 992
+		@media only screen and (min-width: $break-small) and (max-width: $break-medium - 1) { @content; }
+	}
+	@if $media == medium-only { // > 992 & < 1200
+		@media only screen and (min-width: $break-medium) and (max-width: $break-large - 1) { @content; }
+	}
+	@if $media == small-down { // < 768
+		@media only screen and (max-width: $break-small - 1) { @content; }
+	}
+	@if $media == medium-down { // < 992
+		@media only screen and (max-width: $break-medium - 1) { @content; }
+	}
+}

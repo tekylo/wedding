@@ -1,0 +1,106 @@
+@mixin component-comments {
+    .comments-title {
+        font-family: $heading-second;
+        font-size: 36px;
+        margin-bottom: 28px;
+    }
+
+    .comment-respond {
+        margin-top: 45px;
+    }
+
+    .comments-area {
+		background: $white;
+		padding: 20px;
+
+		.comment-list,
+		.comment-list ol {
+			list-style: none;
+		}
+
+		.comment-author {
+			margin-bottom: 20px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+
+		.comment-authot__img {
+			float: left;
+            margin-right: 20px;
+
+            img {
+                border-radius: 50%;
+            }
+		}
+
+		.comment-author__meta {
+            margin-left: 104px;
+            position: relative;
+		}
+
+		.comment-author__name {
+            font-family: $heading-second;
+            font-size: 18px;
+            margin-bottom: 10px;
+		}
+
+		.comment-meta {
+            font-size: 14px;
+            font-family: $heading-second;
+            font-style: italic;
+            margin-bottom: 10px;
+		}
+
+		.comment__text {
+			margin: 3px 0;
+		}
+
+		.comment__reply {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-style: italic;
+            text-decoration: underline;
+		}
+
+		.children {
+			margin-left: 0;
+			padding-left: 40px;
+		}
+
+		label {
+			display: block;
+		}
+
+		.comment-form {
+            .comment-form-author {
+                float: left;
+                margin-right: 20px;
+            }
+			input:not(.submit) {
+                padding: 5px 10px;
+                border: none;
+                border-bottom: 1px solid #000;
+            }
+            textarea {
+                height: 50px;
+                border: none;
+                border-bottom: 1px solid #000;
+                width: 495px;
+            }
+			.submit {
+				padding: 8px 20px;
+				background: none;
+			}
+        }
+        
+        .submit {
+            font-family: $heading-second;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .comment-reply-title {
+        font-family: $heading-second;
+    }
+}
