@@ -58,7 +58,7 @@ Table of Contents:
 	var loaderSvg = new Vivus('my-svg', {
 		type: 'sync',
 		duration: 100,
-		file: 'img/loader.svg',
+		file: 'img/samar & baltasar-01.svg',
 		start: 'autostart',
 		dashGap: 20,
 		forceRender: false
