@@ -1437,7 +1437,7 @@ svg.finish path {
 
 /* Footer */
 footer {
-	background: url(../img/footer.jpg) no-repeat;
+	background: url(../img/boda/DSCN2263.JPG) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
@@ -1480,4 +1480,7 @@ footer:before {
 	padding-right: 20px;
 }
 
+.info {
+	background: #f8d3d9;
+}
 /*# sourceMappingURL=main.css.map */
