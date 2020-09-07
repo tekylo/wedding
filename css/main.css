@@ -1497,9 +1497,19 @@ footer:before {
 
 @media only screen and (max-width : 520px)
 {
+
 	.mobile{
 		object-fit: contain !important;
+	}
+}
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.love-story:before {
+		background: none;
+	}
+
+	.rsvp:after {
+		background: none;
 	}
 }
 
