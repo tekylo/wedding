@@ -1,6 +1,6 @@
 /*!
 Title: Main CSS File
-Theme Name: 
+Theme Name:
 Author Name: FairyTheme
 Author URI: http://themeforest.net/user/fairytheme
 
@@ -1038,9 +1038,15 @@ input.search-field {
 		content: '';
 		position: absolute;
 		display: block;
-		width: 143px;
-		height: 186px;
-		background: url(../img/ls-flower.png) no-repeat;
+		width: 100%;
+		height: 100%;
+		margin-top: -100px;
+		background: url(../img/flores/buganvilla_02.png) no-repeat;
+		background-size: contain;
+		/* margin-bottom: -13px; */
+		/* filter: blur(3px); */
+		/* background: url(../img/ls-flower.png) no-repeat; */
+
 	}
 	.love-story p {
 		width: 70%;
@@ -1247,7 +1253,9 @@ input.search-field {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: url(../img/rsvp-flowers-r.png) no-repeat;
+	/*background: url(../img/rsvp-flowers-r.png) no-repeat;*/
+	background: url(../img/flores/buganvilla_02.png) no-repeat;
+	filter: blur(3px);
 	background-size: contain;
 	background-position: 0 100%;
 	max-width: 500px;
@@ -1263,7 +1271,9 @@ input.search-field {
 		display: block;
 		width: 100%;
 		height: 100%;
-		background: url(../img/rsvp-flowers-l.png) no-repeat;
+		background: url(../img/flores/buganvilla_02.png) no-repeat;
+		filter: blur(3px);
+		/*background: url(../img/rsvp-flowers-l.png) no-repeat;*/
 		background-size: contain;
 		background-position: left;
 		max-width: 400px;
@@ -1484,3 +1494,16 @@ footer:before {
 	background: #f8d3d9;
 }
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width : 520px)
+{
+	.mobile{
+		object-fit: contain !important;
+
+	}
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
