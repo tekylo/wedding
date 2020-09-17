@@ -272,38 +272,27 @@
 							<div class="col-md-8 mb-3 m-md-0">
 								<div class="form-group">
 <!--									<label class="control-label" for="inputName">Nombre</label>-->
-									<input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+									<input type="text" class="form-control" id="inputName" placeholder="Nombre">
 								</div>
 								<div class="form-group">
 <!--									<label class="control-label" for="inputFriendName">Acompañante</label>-->
-									<input type="text" class="form-control" id="inputFriendName" placeholder="Acompañante" required>
+									<input type="text" class="form-control" id="inputFriendName" placeholder="Acompañante">
 								</div>
 								<div class="form-group">
 <!--									<label class="control-label" for="inputNumber">Teléfono o correo</label>-->
 									<input type="text" class="form-control" id="inputNumber" placeholder="Teléfono o correo">
-									<div class="form-group">
-										<select title="¿Que día/días asistirás?" class="selectpicker" multiple>
-											<option>Viernes</option>
-											<option>Sábado</option>
-<!--											<option>4</option>-->
-										</select>
-									</div>
-									<div class="form-group">
+								</div>
+								<div class="form-group">
+									<select title="¿Que día/días asistirás?" name="inputDay" id="inputDay" class="selectpicker" multiple>
+										<option value="Viernes">Viernes</option>
+										<option value="Sábado">Sábado</option>
+									</select>
+								</div>
+								<div class="form-group">
 <!--										<label class="control-label" for="inputName">Por favor, indica si tienes alguna preferencia de dieta o si tienes alguna intolerancia o alergia a tener en cuenta. Gracias</label>-->
-										<textarea rows="5" type="text" class="form-control" placeholder="Por favor, indica si tienes alguna preferencia de dieta o si tienes alguna intolerancia o alergia a tener en cuenta. Gracias"></textarea>
-									</div>
+									<textarea rows="5" type="text" name="inputFood" id="inputFood" class="form-control" placeholder="Por favor, indica si tienes alguna preferencia de dieta o si tienes alguna intolerancia o alergia a tener en cuenta. Gracias"></textarea>
 								</div>
 							</div>
-<!--							<div class="form-group">-->
-<!--								<p>Elige el día</p>-->
-<!--								<select class="selectpicker" multiple>-->
-<!--									<option>2</option>-->
-<!--									<option>3</option>-->
-<!--									<option>4</option>-->
-<!--								</select>-->
-<!--							</div>-->
-
-
 							<div class="col-md-4 align-self-end">
 								<button type="submit" class="btn btn-outline-dark rounded-0 px-3 py-1 font-weight-bold">Enviar</button>
 							</div>

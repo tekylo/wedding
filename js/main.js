@@ -248,7 +248,9 @@ Table of Contents:
 			var formData = {
 				'name': $form.find('input#inputName').val(),
 				'friendName': $form.find('input#inputFriendName').val(),
-				'number': $form.find('input#inputNumber').val()
+				'number': $form.find('input#inputNumber').val(),
+				'day': $form.find('select#inputDay').val(),
+				'food': $form.find('textarea#inputFood').val()
 			};
 
 			$.ajax({
@@ -265,9 +267,12 @@ Table of Contents:
 				} else {
 					if (data.errors.name) {
 						$('#inputName').addClass('error').after('<span class="error-msg">'+data.errors.name+'</span>');
-					} else if (data.errors.friendName) {
-						$('#inputFriendName').addClass('error').after('<span class="error-msg">'+data.errors.friendName+'</span>');
+					}else if (data.errors.number) {
+						$('#inputNumber').addClass('error').after('<span class="error-msg">'+data.errors.number+'</span>');
+					} else if (data.errors.day) {
+						$('#inputDay').addClass('error').after('<span class="error-msg">'+data.errors.day+'</span>');
 					}
+
 				}
 			});
 			e.preventDefault();
