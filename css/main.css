@@ -1517,3 +1517,10 @@ footer:before {
 	color: black;
 	opacity: 1; /* Firefox */
 }
+
+.error_message {
+	color: #F33;
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
